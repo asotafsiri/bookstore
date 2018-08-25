@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'authers/new'
+  get 'authers/create'
+  get 'authers/update'
+  get 'authers/edit'
+  get 'authers/destroy'
+  get 'authers/index'
+  get 'authers/show'
   get 'categories/new'
   get 'categories/create'
   get 'categories/update'
