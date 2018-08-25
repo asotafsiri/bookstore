@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'authors/new'
+  get 'authors/create'
+  get 'authors/update'
+  get 'authors/edit'
+  get 'authors/destroy'
+  get 'authors/index'
+  get 'authors/show'
   get 'publishers/new'
   get 'publishers/create'
   get 'publishers/update'
@@ -29,4 +36,5 @@ Rails.application.routes.draw do
   get 'books/show'
   get 'about/index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'books#index'
 end
