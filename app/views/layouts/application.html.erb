@@ -19,22 +19,20 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active" style="padding-right: 20px">
+          <li class="<%= params[:controller]=='books' ? 'active' : '' %>" style="padding-right: 20px">
           <%= link_to 'Home', root_path %>
           </li>
-          <li class="nav-item" style="padding-right: 20px">
+          <li class="<%= params[:controller]=='about' ? 'active' : '' %>" style="padding-right: 20px">
           <%= link_to 'About', about_path %>
           </li>
-          <li class="nav-item" style="padding-right: 20px">
-          <%= link_to 'Books', book_path %>
           </li>
-          <li class="nav-item" style="padding-right: 20px">
+          <li class="<%= params[:controller]=='authers' ? 'active' : '' %>"  style="padding-right: 20px">
           <%= link_to 'Authors', author_path %>
           </li>
-          <li class="nav-item" style="padding-right: 20px">
+          <li class="<%= params[:controller]=='publishers' ? 'active' : '' %>"  style="padding-right: 20px">
           <%= link_to 'Publishers', publisher_path %>
           </li>
-          <li class="nav-item" style="padding-right: 20px">
+            <li class="<%= params[:controller]=='categories' ? 'active' : '' %>"  style="padding-right: 20px">
           <%= link_to 'Categories', category_path %>
           </li>
          </ul>
@@ -45,6 +43,17 @@
    <h1>The BookStore <small><%= 	@page_title ? 	@page_title: 'Welcome' %> </small></h1>
 </div>
     </header>
-    <%= yield %>
+    <section>
+     <div class="container" >
+      <div class="row">
+        <div class="col-md-8">
+         <%= yield %>
+         </div>
+         <div class="col-md-4">
+         Test
+        </div>
+      </div>
+     </div>
+    </section>
   </body>
 </html>
