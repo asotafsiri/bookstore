@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookstore</title>
+    <title><%= 	@page_title ? 	@page_title: 'Welcome' %> | The BookStore</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
@@ -38,10 +38,13 @@
           <%= link_to 'Categories', category_path %>
           </li>
          </ul>
-
-
       </div>
     </nav>
+    <header>
+<div class="container">
+   <h1>The BookStore <small><%= 	@page_title ? 	@page_title: 'Welcome' %> </small></h1>
+</div>
+    </header>
     <%= yield %>
   </body>
 </html>
