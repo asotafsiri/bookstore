@@ -35,6 +35,13 @@ Rails.application.routes.draw do
   get 'books/index'
   get 'books/show'
   get 'about/index'
+  get 'about' => 'about#index'
+ 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'books#index'
+
+  resources :books
+  resources :authors
+  resources :categories
+  resources :publishers
 end
