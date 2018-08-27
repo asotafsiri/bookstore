@@ -34,3 +34,23 @@ footer{
   text-align: center;
   padding-top: 20px
 }
+#books-index{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#books-index img{
+  width:100%;
+  padding: 3px;
+  border:1px #ccc solid;
+}
+#books-index h3{
+  height:40px;
+  font-size: 14px;
+  margin-bottom: 20px;
+
+}
+#books-index .btn{
+  display:block;
+  margin-top:20px;
+  margin-bottom: 20px;
+}
