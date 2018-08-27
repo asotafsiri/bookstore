@@ -11,3 +11,10 @@
     	</ul>
     </div>
 <% end %>
+<% if params[:controller] == 'books' &&  params[:action]=='index' || params[:action] == 'show' %>
+   <ul class="list-group">
+    <li class="list-group-item">Electrical Engineering</li>
+    <li class="list-group-item">Information Technology</li>
+    <li class="list-group-item">Computer Engineering</li>
+   </ul>
+<% end %>
