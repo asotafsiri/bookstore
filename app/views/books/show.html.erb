@@ -1,2 +1,30 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<div id="books-show">
+  <h2>MICROGRID</h2>
+  <div class="books-show-left">
+    <%= image_tag('covers/51x3m5OGIjL._UY250_.jpg')%>
+  </div>
+  <div class="books-show-right">
+    <h3> Book info: </h3>
+     <ul>
+      <li> <strong>Category: </strong>MICROGRID</li>
+      <li> <strong>Author: </strong> Hassan bevrani</li>
+      <li> <strong>Publisher: </strong> Course Technology</li>
+      <li> <strong>Year: </strong>2007</li>
+      <li> <strong>ISBN: </strong>1598632167</li>
+      <li> <strong>Format: </strong>Paperback</li>
+      <li> <strong>Pagese: </strong>678</li>
+     </ul>
+     <%= link_to "Buy For $35", 'https://www.amazon.com/Microgrid-Dynamics-Control-Hassan-Bevrani/dp/1119263670',
+     class: 'btn btn-success', target: '_blank'%>
+  </div>
+  <div class="clearfix"></div>
+  <h4> Excerpt</h4>
+  <p>
+  his book discusses relevant microgrid technologies in the context of integrating renewable energy
+  and also addresses challenging issues. The authors summarize long term academic and research
+   outcomes and contributions. In addition, this book is influenced by the authors’ practical
+   experiences on microgrids (MGs), electric network monitoring, and control and power electronic
+    systems. A thorough discussion of the basic principles of the MG modeling and operating issues is provided.
+    The MG structure, types, operating modes, modelling, dynamics, and
+  </p>
+</div>
