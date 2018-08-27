@@ -22,20 +22,27 @@
           <li class="<%= params[:controller]=='books' ? 'active' : '' %>" style="padding-right: 20px">
           <%= link_to 'Home', root_path %>
           </li>
-          <li class="<%= params[:controller]=='about' ? 'active' : '' %>" style="padding-right: 20px">
+          <li class="<%= params[:controller]=='about' ? 'active' : '' %>" style="padding-right: 20px" >
           <%= link_to 'About', about_path %>
           </li>
           </li>
-          <li class="<%= params[:controller]=='authers' ? 'active' : '' %>"  style="padding-right: 20px">
-          <%= link_to 'Authors', author_path %>
-          </li>
-          <li class="<%= params[:controller]=='publishers' ? 'active' : '' %>"  style="padding-right: 20px">
-          <%= link_to 'Publishers', publisher_path %>
-          </li>
-            <li class="<%= params[:controller]=='categories' ? 'active' : '' %>"  style="padding-right: 20px">
-          <%= link_to 'Categories', category_path %>
-          </li>
+
          </ul>
+
+     <ul class="nav navbar-nav">
+     <li class="dropdown">
+        <a href="#" class="dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Add New <span class="caret"></span></a>
+
+         <ul class="dropdown-menu navbar-right" role="menu">
+           <li><%= link_to "Book", new_book_path%></li>
+           <li><%= link_to "Category", new_category_path%></li>
+           <li><%= link_to "Author", new_author_path%></li>
+          <li><%= link_to "Publisher", new_publisher_path%></li>
+
+         </ul>
+        </li>
+      </ul>
       </div>
     </nav>
     <header>
