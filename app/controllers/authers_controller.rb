@@ -1,22 +1,19 @@
+# frozen_string_literal: true
+
+# AuthersController class
 class AuthersController < ApplicationController
-  def new
-  end
+  def index; end
 
-  def create
-  end
+  def show; end
 
-  def update
-  end
+  def new; end
 
-  def edit
-  end
+  def edit; end
 
-  def destroy
-  end
+  def create; end
 
-  def index
-  end
+  def update; end
 
-  def show
-  end
+  def destroy; end
+
 end
